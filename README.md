@@ -5,7 +5,7 @@ A plugin that allows you to replace the standart sounds in goat horn with your o
 I borrowed the idea for this plugin from the **[CustomDiscs SVC](https://modrinth.com/plugin/customdiscs-svc)** plugin.
 You could say that this is a **fork** of that plugin, since it uses the same code.
 
-[RU] Русская версия файла **[находится здесь}(https://github.com/24na7/CustomHorns-RVC/blob/main/info/README_RU.md)**
+[RU] Русская версия файла **[находится здесь](https://github.com/24na7/CustomHorns-RVC/blob/main/info/README_RU.md)**
 
 ## ✅ Dependencies
 
