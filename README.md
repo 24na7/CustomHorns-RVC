@@ -11,11 +11,6 @@ You could say that this is a **fork** of that plugin, since it uses the same cod
 * Download dependency **[ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/)**
 * Download dependency **[CommandAPI](https://modrinth.com/plugin/commandapi)**
 
-## 🛠 Roadmap
-- **Long-term plugin support**
-- **Support for other languages**
-- **Detailed instructions for use within the plugin**
-
 ## ⚙️ Configuration, Commands & Permissions
 
 ```json5
