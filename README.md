@@ -98,22 +98,3 @@ customhorns.distance - Change your distance in voice horns
 customhorns.help - Allow showcase in /ch help
 customhorns.reload - Allow reload in plugin
 ```
-
-## ❓ F.A.Q
-**1. Will support for other kernels be planned, as well as migration to new versions?**
-
-Yes, I will continue to support the plugin as long as I am a modder, but in the near future, updates to new versions will be very rare due to difficulties in my personal life.
-
-**2. The plugin isn't working, I'm getting a lot of errors. How can I contact you?**
-
-You can create an issues branch on GitHub with your crash log/errors. I will try to fix the bug in the plugin and solve your problem.
-
-**3. How can I increase the limit from 8 seconds audiofile to more?**
-
-In config.yml, there is a value max-duration: 8. Change it, but be careful when setting large values, as there may be bugs.
-
-<<<<<<< HEAD
----
-=======
----
->>>>>>> 1c3185e2409c3480ffd5c5a3c1a1c093a19aa168
