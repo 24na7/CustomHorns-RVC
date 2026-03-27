@@ -1,27 +1,22 @@
 # 🔉 CustomHorns SVC
 
-A plugin that allows you to replace the standart sounds in goat horn with your own custom sounds.
+Плагин позволяющий менять стандартные звуки на свои кастомные для предмета "Козьий рог"
 
-I borrowed the idea for this plugin from the **[CustomDiscs SVC](https://modrinth.com/plugin/customdiscs-svc)** plugin.
-You could say that this is a **fork** of that plugin, since it uses the same code.
+Идея для плагина была с другого плагина **[CustomDiscs SVC](https://modrinth.com/plugin/customdiscs-svc)**
+Можно сказать, что это является обычным **форком** который заменяет функционал на одном предмете в другой.
 
-<<<<<<< HEAD
-=======
-[RU] Русская версия файла **[находится здесь](https://github.com/24na7/CustomHorns-RVC/blob/main/info/README_RU.md)**
+## ✅ Зависимости
 
->>>>>>> 1c3185e2409c3480ffd5c5a3c1a1c093a19aa168
-## ✅ Dependencies
+* Скачайте зависимость **[SimpleVoiceChat-bukkit](https://modrinth.com/plugin/simple-voice-chat)**
+* Скачайте зависимость **[ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/)**
+* Скачайте зависимость **[CommandAPI](https://modrinth.com/plugin/commandapi)**
 
-* Download dependency **[SimpleVoiceChat-bukkit](https://modrinth.com/plugin/simple-voice-chat)**
-* Download dependency **[ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/)**
-* Download dependency **[CommandAPI](https://modrinth.com/plugin/commandapi)**
+## 🛠 Дорожная карта
+- **Длительная поддержка плагина**
+- **Поддержка других языков**
+- **Детальная инструкция к использованию плагина**
 
-## 🛠 Roadmap
-- **Long-term plugin support**
-- **Support for other languages**
-- **Detailed instructions for use within the plugin**
-
-## ⚙️ Configuration, Commands & Permissions
+## ⚙️ Настройки, команды и права
 
 ```json5
 info:
@@ -110,20 +105,17 @@ customhorns.reload - Allow reload in plugin
 ```
 
 ## ❓ F.A.Q
-**1. Will support for other kernels be planned, as well as migration to new versions?**
 
-Yes, I will continue to support the plugin as long as I am a modder, but in the near future, updates to new versions will be very rare due to difficulties in my personal life.
+**1. Планируется ли поддержка других ядер, а также переход на новые версии?**
 
-**2. The plugin isn't working, I'm getting a lot of errors. How can I contact you?**
+Да, я буду продолжать поддерживать плагин, пока занимаюсь моддингом, но в ближайшее время обновления до новых версий будут выходить очень редко из-за сложных жизненных обстоятельств.
 
-You can create an issues branch on GitHub with your crash log/errors. I will try to fix the bug in the plugin and solve your problem.
+**2. Плагин не работает, выдает много ошибок. Как с вами связаться?**
 
-**3. How can I increase the limit from 8 seconds audiofile to more?**
+Вы можете создать тему (issue) на GitHub с приложенным логом ошибок. Я постараюсь исправить баг в плагине и решить вашу проблему.
 
-In config.yml, there is a value max-duration: 8. Change it, but be careful when setting large values, as there may be bugs.
+**3. Как увеличить лимит аудиофайла с 8 секунд до большего?**
 
-<<<<<<< HEAD
+В файле config.yml есть параметр `max-duration: 8`. Измените это значение, но будьте осторожны с установкой слишком больших значений, так как это может вызвать ошибки.
+
 ---
-=======
----
->>>>>>> 1c3185e2409c3480ffd5c5a3c1a1c093a19aa168
