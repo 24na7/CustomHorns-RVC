@@ -1,0 +1,10 @@
+name: CustomHorns
+version: '1.0'
+main: org.okunev.customhorns.CustomHorns
+api-version: '1.21'
+folia-supported: true
+authors: [ 24na7 ]
+description: A plugin that allows you to change the default sounds of goat horns to your own custom ones using files or services.
+depend: [voicechat, ProtocolLib]
+softdepend: [CommandAPI]
+load: STARTUP

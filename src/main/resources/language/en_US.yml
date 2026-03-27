@@ -1,0 +1,85 @@
+version: "1.0"
+
+language:
+  prefix: "<dark_gray>[<gradient:#FF6B6B:#FF8E53>CustomHorns</gradient>]</dark_gray> "
+
+  command:
+    help:
+      description: "Show help message"
+      syntax: "/customhorns help"
+      messages:
+        header: "<gold>=== CustomHorns Help ===</gold>"
+        format: "<yellow>{0}</yellow> <gray>- {1}</gray>"
+        footer: "<gold>=========================</gold>"
+
+    reload:
+      description: "Reload plugin configuration"
+      syntax: "/customhorns reload"
+      messages:
+        successfully: "<green>Plugin reloaded successfully!</green>"
+
+    create:
+      description: "Create a custom horn"
+      syntax: "/customhorns create <local/remote> ..."
+      messages:
+        error:
+          not-holding-horn: "<red>You must be holding a goat horn!</red>"
+        file: "<green>File: {0}</green>"
+        name: "<green>Name: {0}</green>"
+        link: "<green>URL: {0}</green>"
+        duration: "<green>Duration: {0} seconds</green>"
+        checking-duration: "<yellow>Checking audio duration...</yellow>"
+      local:
+        description: "Create a horn from local file"
+        syntax: "/customhorns create local <filename> <name>"
+      remote:
+        description: "Create a horn from remote URL"
+        syntax: "/customhorns create remote <url> <name>"
+
+    download:
+      description: "Download audio file from URL"
+      syntax: "/customhorns download <url> <filename>"
+      messages:
+        downloading: "<yellow>Downloading file...</yellow>"
+        successfully: "<green>File downloaded successfully!</green>"
+        create-tooltip: "<green>Use {0} to create a horn</green>"
+        error:
+          file-too-large: "<red>File too large! Maximum size: {0}MB</red>"
+          while-download: "<red>Error while downloading file!</red>"
+
+    distance:
+      description: "Set your horn sound distance"
+      syntax: "/customhorns distance <radius>"
+      messages:
+        success: "<green>Your horn distance set to {0} blocks!</green>"
+        click: "<green>Click on a block to set distance</green>"
+        error:
+          not-jukebox: "<red>You must click on a jukebox!</red>"
+
+  error:
+    command:
+      no-permission: "<red>You don't have permission to use this command!</red>"
+      invalid-filename: "<red>Invalid filename!</red>"
+      unknown-extension: "<red>Unknown file extension! Supported: wav, mp3, flac, ogg</red>"
+      horn-name-empty: "<red>Song name cannot be empty!</red>"
+      cant-perform: "<red>You cannot perform this command!</red>"
+      unknown: "<red>Unknown command! Use /customhorns help</red>"
+    file:
+      not-found: "<red>File not found!</red>"
+    play:
+      no-matches: "<red>No audio matches found!</red>"
+      audio-load: "<red>Failed to load audio!</red>"
+      while-playing: "<red>An error occurred while playing!</red>"
+    horn:
+      too-long: "<red>Audio is too long! Maximum duration is {0} seconds.</red>"
+      already-playing: "<red>You are already playing a horn!</red>"
+    duration-check-failed: "<red>Failed to check audio duration!</red>"
+
+  horn-name:
+    simple: "<white>Custom Horn</white>"
+    youtube: "<white>YouTube Horn</white>"
+    soundcloud: "<white>SoundCloud Horn</white>"
+
+  now-playing: "<green>Now Playing:</green>"
+  horn:
+    default-name: "<gray>Custom Horn</gray>"

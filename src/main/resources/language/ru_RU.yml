@@ -1,0 +1,85 @@
+version: "1.0"
+
+language:
+  prefix: "<dark_gray>[<gradient:#FF6B6B:#FF8E53>CustomHorns</gradient>]</dark_gray> "
+
+  command:
+    help:
+      description: "Показать справку"
+      syntax: "/customhorns help"
+      messages:
+        header: "<gold>=== CustomHorns Помощь ===</gold>"
+        format: "<yellow>{0}</yellow> <gray>- {1}</gray>"
+        footer: "<gold>=========================</gold>"
+
+    reload:
+      description: "Перезагрузить конфигурацию плагина"
+      syntax: "/customhorns reload"
+      messages:
+        successfully: "<green>Плагин успешно перезагружен!</green>"
+
+    create:
+      description: "Создать кастомный рог"
+      syntax: "/customhorns create <local/remote> ..."
+      messages:
+        error:
+          not-holding-horn: "<red>Вы должны держать козий рог в руке!</red>"
+        file: "<green>Файл: {0}</green>"
+        name: "<green>Название: {0}</green>"
+        link: "<green>URL: {0}</green>"
+        duration: "<green>Длительность: {0} секунд</green>"
+        checking-duration: "<yellow>Проверка длительности аудио...</yellow>"
+      local:
+        description: "Создать рог из локального файла"
+        syntax: "/customhorns create local <filename> <name>"
+      remote:
+        description: "Создать рог из URL"
+        syntax: "/customhorns create remote <url> <name>"
+
+    download:
+      description: "Скачать аудиофайл по URL"
+      syntax: "/customhorns download <url> <filename>"
+      messages:
+        downloading: "<yellow>Скачивание файла...</yellow>"
+        successfully: "<green>Файл успешно скачан!</green>"
+        create-tooltip: "<green>Используйте {0} для создания рога</green>"
+        error:
+          file-too-large: "<red>Файл слишком большой! Максимальный размер: {0}МБ</red>"
+          while-download: "<red>Ошибка при скачивании файла!</red>"
+
+    distance:
+      description: "Установить дистанцию звука вашего рога"
+      syntax: "/customhorns distance <radius>"
+      messages:
+        success: "<green>Дистанция вашего рога установлена на {0} блоков!</green>"
+        click: "<green>Нажмите на блок для установки дистанции</green>"
+        error:
+          not-jukebox: "<red>Вы должны нажать на проигрыватель!</red>"
+
+  error:
+    command:
+      no-permission: "<red>У вас нет прав на использование этой команды!</red>"
+      invalid-filename: "<red>Недопустимое имя файла!</red>"
+      unknown-extension: "<red>Неизвестное расширение файла! Поддерживаются: wav, mp3, flac, ogg</red>"
+      horn-name-empty: "<red>Название не может быть пустым!</red>"
+      cant-perform: "<red>Вы не можете выполнить эту команду!</red>"
+      unknown: "<red>Неизвестная команда! Используйте /customhorns help</red>"
+    file:
+      not-found: "<red>Файл не найден!</red>"
+    play:
+      no-matches: "<red>Аудио не найдено!</red>"
+      audio-load: "<red>Не удалось загрузить аудио!</red>"
+      while-playing: "<red>Произошла ошибка во время воспроизведения!</red>"
+    horn:
+      too-long: "<red>Аудио слишком длинное! Максимальная длительность: {0} секунд.</red>"
+      already-playing: "<red>Вы уже играете на роге!</red>"
+    duration-check-failed: "<red>Не удалось проверить длительность аудио!</red>"
+
+  horn-name:
+    simple: "<white>Кастомный Рог</white>"
+    youtube: "<white>YouTube Рог</white>"
+    soundcloud: "<white>SoundCloud Рог</white>"
+
+  now-playing: "<green>Сейчас играет:</green>"
+  horn:
+    default-name: "<gray>Кастомный Рог</gray>"

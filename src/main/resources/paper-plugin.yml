@@ -1,0 +1,17 @@
+name: CustomHorns
+version: 1.0
+main: org.okunev.customhorns.CustomHorns
+api-version: "1.21"
+folia-supported: true
+dependencies:
+  server:
+    voicechat:
+      required: true
+      load: BEFORE
+    ProtocolLib:
+      required: true
+      load: BEFORE
+    CommandAPI:
+      required: false
+      load: BEFORE
+loader: org.okunev.customhorns.CustomHornsLoader
